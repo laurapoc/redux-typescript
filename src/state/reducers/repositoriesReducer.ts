@@ -37,4 +37,6 @@ const reducer = (state: RepositoriesState, action: Action): RepositoriesState =>
   }
 };
 
+// TODO: add get api: https://registry.npmjs.org/-/v1/search?text=react
+
 export default reducer;
