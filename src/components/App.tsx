@@ -1,21 +1,17 @@
+import { Provider } from "react-redux";
+
+import RepositoriesList from "./RepositoriesList";
+
+import { store } from "../state";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div>
+        <h1>Search For Package</h1>
+        <RepositoriesList />
+      </div>
+    </Provider>
   );
 }
 
